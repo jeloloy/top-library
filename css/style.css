@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section__track .btn__add, .section__track dialog .add--book__form .btn__cancel, .section__track dialog .add--book__form .add__book__btn {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 103, 57);
+}
+
+.section__track dialog .add--book__form .title,
+.section__track dialog .add--book__form .author,
+.section__track dialog .add--book__form .pages {
+  outline: none;
+  font-size: 1rem;
+  width: 15vw;
+  height: 40px;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgb(255, 103, 57);
+}
+
+body {
+  background: lightblue;
+}
+
+.header__track {
+  display: inline-block;
+  background: dimgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9921568627);
+  height: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__track h2 {
+  color: white;
+}
+
+.section__track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+  padding-top: 2rem;
+}
+.section__track dialog {
+  background-color: lightcyan;
+  margin: auto;
+  height: 55vh;
+  width: 30vw;
+  border: none;
+  border-radius: 5px;
+}
+.section__track dialog .add--book__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.section__track dialog .add--book__form .fieldset__book {
+  width: 20vw;
+  text-align: center;
+  border: none;
+  border: 1px solid rgb(255, 103, 57);
+}
+.section__track dialog .add--book__form .book__info {
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0 8px;
+}
+.section__track dialog .add--book__form .input_book {
+  padding: 1rem 0;
+}
+.section__track dialog .add--book__form input::-webkit-outer-spin-button,
+.section__track dialog .add--book__form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section__track dialog .add--book__form .input_radio {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.section__track dialog .add--book__form .input_radio input {
+  display: flex;
+}
+.section__track dialog .add--book__form .btn_add_close {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  padding-top: 2rem;
+}
+.section__track dialog .add--book__form .add__book__btn {
+  text-transform: uppercase;
+}
+.section__track dialog .add--book__form .add__book__btn:active {
+  background: rgb(125, 245, 225);
+}
+.section__track dialog .add--book__form .btn__cancel {
+  text-transform: uppercase;
+}
+.section__track dialog .add--book__form .btn__cancel:active {
+  background: rgb(125, 245, 225);
+}
+.section__track #library {
+  position: absolute;
+  left: 2rem;
+  top: 12rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  height: 65vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.section__track #library .book-card {
+  border: 1px solid rgb(255, 103, 57);
+  padding: 2rem;
+  border-radius: 5px;
+  height: 30vh;
+}
+.section__track #library .book-card p {
+  padding: 0.5rem 0;
+}
+.section__track #library .book-card button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 103, 57);
+}
+.section__track #library .book-card button:active {
+  background: rgb(125, 245, 225);
+}
+.section__track .btn__add {
+  width: 13rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.section__track .btn__add:active {
+  background: rgb(125, 245, 225);
+}
+
+.footer__track {
+  border-top: 1px solid rgba(0, 0, 0, 0.9921568627);
+  height: 2em;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(255, 103, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: dimgray;
+}

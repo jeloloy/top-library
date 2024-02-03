@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <head>
+        <div class="header__track">
+            <h2>My Library</h2>
+            
+        </div>
+    </head>
+
+    <section>
+        <div class="section__track">
+            <button class="btn__add" id="btn__add">Add New Book?</button>
+                <dialog>
+                    
+                    <div>
+                        <form action="">
+                            <div class="add--book__form">
+                                <fieldset class="fieldset__book">
+                                    <legend><h3 class="book__info">Book Information</h3></legend>
+                                    <div class="input_book">
+                                        <input class="title" type="text" name="title" id="title" placeholder="Title">
+                                    </div>
+                                    <div class="input_book">
+                                        <input class="author" type="text" name="author" id="author" placeholder="Author">
+                                    </div>
+                                    <div class="input_book">
+                                        <input class="pages" type="number" min="0" name="pages" id="pages" placeholder="Pages">             
+                                    </div>
+                                    <div class="input_radio">
+                                        <div>
+                                            <label for="read">Have you read this book?</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="read" id="read">
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+
+                                <div class="btn_add_close">
+                                    <div>
+                                        <button class="add__book__btn" id="add__book__btn">Add</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn__cancel" value="cancel" formmethod="dialog">Cancel</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </dialog>
+            <div id="library"></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer__track">
+            Jeje's Library Tracker
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
